@@ -546,7 +546,7 @@
     <figure>
       <xsl:apply-templates select="w:pPr/w:pStyle/@w:val"/>
       <xsl:apply-templates select="$caption" mode="fig-caption"/>
-      <img src="images/{normalize-space(.)}">
+      <img src="{normalize-space(.)}">
         <xsl:attribute name="alt">
           <xsl:choose>
             <xsl:when test="$caption">
